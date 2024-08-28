@@ -4,11 +4,39 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <meta charset='utf-8'>
     <title>render</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Redirect</title>
+    <script>
+        function checkPassword(event) {
+            event.preventDefault(); // フォームの送信を防ぐ
+
+            const passwordInput = document.getElementById('password').value;
+            const correctPassword = ''; // 正しいパスワード
+
+            if (passwordInput === correctPassword) {
+                window.location.href = '/blog'; // 正しいパスワードならリダイレクト
+            } else {
+                alert('パスワードが間違っています。');
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="checkPassword(event)">
+        <label for="password">パスワードを入力してください:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">送信</button>
+    </form>
+</body>
+</html>
+
     //pass
     <script>function getlevel(){
         if(document.getElementById('word').value == "85175"){document.cookie = "yuki=True; path=/;";}else{
         let req = new XMLHttpRequest();
-        req.addEventListener("load", function(){document.getElementById('info').textContent = this.responseText});
+        req.addEventListener("load", function(){document.getElementById('info').textContent  this.responseText});
         req.open("GET", "/answer?q="+document.getElementById('word').value);
         req.send();}
     }
@@ -33,7 +61,9 @@
         window.onload = function() {
             var password = prompt('パスワードを入力してください:');
             var correctPassword = '85175'; 
-          
+          if (passwordInput === correctPassword) {
+                window.location.href = '/blog'; // 正しいパスワードならリダイレクト
+            } 
             if (password !== correctPassword) {
                 alert('パスワードが間違っています。');
                 window.location.href = 'https://www.yahoo.co.jp'; 
