@@ -1,27 +1,1130 @@
 <!DOCTYPE html>
+<html lang="ja" class=" webkit safari safari16 mac js"><head>
+	<meta charset="utf-8">
+	<title>因数分解 - 計算が簡単にできる電卓サイト</title>
+ 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="入力された式を因数分解します。面倒な因数分解を簡単におこなうことができます。複雑な因数分解では途中式も表示されますので解き方の手順がわかります。">
+	<meta name="keywords" content="算数,電卓,因数分解,途中式">
+	
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+ 
+	<meta property="og:title" content="因数分解 - 計算が簡単にできる電卓サイト">
+	<meta property="og:description" content="入力された式を因数分解します。面倒な因数分解を簡単におこなうことができます。複雑な因数分解では途中式も表示されますので解き方の手順がわかります。">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://k3su.xyz/calc/factorization.php">
+	<meta property="og:site_name" content="算数の電卓">
+	<meta property="og:locale" content="ja_JP">
+ 
+ 
+	<link rel="icon" type="image/x-icon" href="../_image/fav.ico">
+	<link rel="apple-touch-icon" href="../_image/fav.png" sizes="180x180">
+	
+	<link rel="altarnate" type="application/rss+xml" title="RSS2.0" href="https://k3su.xyz/rss.xml">
+	<link rel="altarnate" type="application/atom+xml" title="ATOM" href="https://k3su.xyz/atom.xml">
+	
+	<link rel="stylesheet" href="../_css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kotta+One&amp;display=swap" rel="stylesheet">
+	
+	<script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202408280101/reactive_library_fy2021.js?bust=31086664"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-DZ6DM0R39X&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-159383779-3&amp;l=dataLayer&amp;cx=c"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202408280101/show_ads_impl_fy2021.js?bust=31086664"></script><script async="" src="//cse.google.com/adsense/search/async-ads.js"></script><script src="../_js/css_browser_selector.js"></script>
+		<link rel="stylesheet" href="../_css/style.css?20230318">
+	
+	<script src="../_js/jquery-1.8.3.min.js"></script>
+	<script src="../_js/menu.js"></script>
+	<script src="../_js/movetop.js"></script>
+	<script src="../_js/calc.js?202003234"></script>
+	<script src="../_js/search.js"></script>
+ 
+ 
+			<script src="../_anlz/"></script>
+ 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KP75ESTN6J"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-159383779-3');
+		  gtag('config', 'G-KP75ESTN6J');
+		</script>
+ 
+		<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous" data-checked-head="true"></script>
+	
+	
+ 
+<script src="https://www.google.com/cse/static/element/8fa85d58e016b414/cse_element__ja.js?usqp=CAI%3D" type="text/javascript"></script><link type="text/css" href="https://www.google.com/cse/static/element/8fa85d58e016b414/default+ja.css" rel="stylesheet"><link type="text/css" href="https://www.google.com/cse/static/style/look/v4/default.css" rel="stylesheet"><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="" src="https://fundingchoicesmessages.google.com/i/ca-pub-9242622843425228?href=https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php&amp;ers=2"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxXjb8oSzuefjdNIwF_qOL8uwDmWloft0gqEP7BzrcASzy1_MejD7-n4A8FRJD0qydBKo3loymdqF1k1RpTtmwXFPyBCiV5J6et_NN6gsPechzQfP636p6FImIF3WUskrW2FouOGbQ==?fccs=W1siQUtzUm9sOGtCZGUwSXNnTTJXNjZQUThrT195THYwU2RVZWFUVzRDVkVXX1dKbzRaMlJZc09FeDNGelJYZ0tuUGh5YnlWQThyY3RtbXJ1ZUhfY2MxVmpQQWEwVG9RcFZpd2wxMWpZNUZGVS1ETUpzMWU1dWJMRl9wMHVfVTA4Z1JzV0pmU2Q5VnFRZmFvRHJDeVlYUm5uY3Jhd2VZbXJSaGJnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3MjUzNTk2MTYsMzI3MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL2szc3UueHl6L2NhbGMvZmFjdG9yaXphdGlvbi5waHAiLG51bGwsW1s4LCJtbmZrZ2dScTc0NCJdLFs5LCJqYSJdLFsxOCwiW1tbMF1dXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxUh4NVbKUwYEiq7w2q8qUYknBjUtSU-nAvHzMm8LypkV-RlGjMtD_CvKNruE6KPADZc2aZD61fCMFsngDaPb2Tatze2omd0trnf0eZks2Kk60vrK3Wa_A_1jVKGrxMBYpDuofSegw==?fccs=W1siQUtzUm9sOGtCZGUwSXNnTTJXNjZQUThrT195THYwU2RVZWFUVzRDVkVXX1dKbzRaMlJZc09FeDNGelJYZ0tuUGh5YnlWQThyY3RtbXJ1ZUhfY2MxVmpQQWEwVG9RcFZpd2wxMWpZNUZGVS1ETUpzMWU1dWJMRl9wMHVfVTA4Z1JzV0pmU2Q5VnFRZmFvRHJDeVlYUm5uY3Jhd2VZbXJSaGJnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3MjUzNTk2MTcsNDYwMDAwMDBdLG51bGwsbnVsbCxudWxsLFtudWxsLFs3LDldLG51bGwsMixudWxsLCJlbiJdLCJodHRwczovL2szc3UueHl6L2NhbGMvZmFjdG9yaXphdGlvbi5waHAiLG51bGwsW1s4LCJtbmZrZ2dScTc0NCJdLFs5LCJqYSJdLFsxOCwiW1tbMF1dXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxXjk1JVVo0V1GvOUt5wQoqAR7pS5o__bnVTPBqNRrHbB-YXdLvmlO7YC9oIvD-qHowgeFb-0Of0wnEeqDD5eFrLEY58zfXoX8Telk02gDA_rvyTrpkejtDgPpu15xMmiJjDPZKVvA==?fccs=W1siQUtzUm9sOGtCZGUwSXNnTTJXNjZQUThrT195THYwU2RVZWFUVzRDVkVXX1dKbzRaMlJZc09FeDNGelJYZ0tuUGh5YnlWQThyY3RtbXJ1ZUhfY2MxVmpQQWEwVG9RcFZpd2wxMWpZNUZGVS1ETUpzMWU1dWJMRl9wMHVfVTA4Z1JzV0pmU2Q5VnFRZmFvRHJDeVlYUm5uY3Jhd2VZbXJSaGJnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE3MjUzNTk2MjAsMjE5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw5LDZdLG51bGwsMixudWxsLCJlbiIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDFdLCJodHRwczovL2szc3UueHl6L2NhbGMvZmFjdG9yaXphdGlvbi5waHAiLG51bGwsW1s4LCJtbmZrZ2dScTc0NCJdLFs5LCJqYSJdLFsxOCwiW1tbMF1dXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ"></script></head>
+ 
+	<body aria-hidden="false" style="">
+		<div id="wrapper" style="height: auto !important;">
+	
+			<header>
+	<div id="header_main" class="width">
+		<a href="../">
+			<img src="../_image/title2.png" alt="算数の電卓" id="header_title">
+					</a>
+ 
+		<div id="header_search">
+			<script async="" src="https://cse.google.com/cse.js?cx=partner-pub-9242622843425228:5vzjqwjycko"></script><div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-ja" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="検索" aria-label="検索" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: medium; margin: -0.0625em 0px 0px; height: 1.25em; background: url(&quot;https://www.google.com/cse/static/images/1x/ja/branding.png&quot;) left no-repeat rgb(255, 255, 255); outline: currentcolor;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="検索ボックスをクリア" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>検索</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="結果をクリア">&nbsp;</div></td></tr></tbody></table></form></div></div>
+			<a href="#" id="header_search_cancel"><i class="fas fa-times"></i></a>
+		</div>
+	
+		<nav id="global_menu">
+			<ul>
+				<li><a href="../" class="link_header_menu"><i class="fas fa-home"></i><br>ホーム</a></li>
+				<li id="global_menu_search"><a href="#" class="link_header_menu"><i class="fas fa-search"></i><br>検索</a></li>
+				<li><a href="../sitemap.php" class="link_header_menu"><i class="fas fa-bars"></i><br>メニュー</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+			
+			<div id="contents" class="width" style="height: auto !important;">
+ 
+				<main class="main_page" style="height: auto !important;">
+ 
+					<article style="height: auto !important;">
+ 
+						<h1 class="head_a">『因数分解』の電卓</h1>
+						
+						<div class="mg_b_20 link_qmlist_calc">
+	<a href="https://k3su.xyz/app/" class="fc_b">中学生向け数学の無料問題集アプリ</a>
+</div>
+						<div class="counter_display fc_gy mg_b_20 mg_t_10">この電卓は<span class="fw_b mg_r_5 mg_l_5">392万8942回</span>使われています</div>						
+						<div class="sec_mg_b" style="height: auto !important;">
+	<div id="area_msg"></div>
+	<div class="area_calc">
+			
+		<div class="oi_wrap mg_b_10">
+			<div class="oi oi_input js_clear_oi mg_b_0" id="oi1" data-on="1">
+				<span class="oi_i oi_i_last"></span>
+			</div>
+		</div>
+	
+ 
+		<div id="oi_kb" class="mg_b_0" style="display:none;">
+		
+			<div id="oi_kb_main" class="mg_b_0 flex flex_fw_w flex_jc_sb flex_ac_sb wdh_100 pd_10" style="height:250px;">
+		
+				<div class="oi_kb_btn3 oi_kb_cb"><i class="fas fa-arrow-left"></i></div>
+				<div class="oi_kb_btn3 oi_kb_ca"><i class="fas fa-arrow-right"></i></div>
+				<!-- <div class="oi_kb_btn4"></div> -->
+				<div class="oi_kb_btn3 oi_kb_bs lh_1 oi_kb_pckey_fs"><i class="fas fa-backspace"></i><span class="oi_kb_pckey">[ bs del ]</span></div>
+				<div class="oi_kb_btn3 oi_kb_comp oi_kb_btn_fra_tgl lh_12 oi_kb_pckey_fs">完了<span class="oi_kb_pckey">[ esc ]</span></div>
+				<div class="oi_kb_btn3 oi_kb_facn_cansel oi_kb_btn_fra_tgl dspy_n lh_12 oi_kb_pckey_fs">取消<span class="oi_kb_pckey">[ esc ]</span></div>
+				<div class="oi_kb_btn2 oi_kb_fanc oi_kb_btn_fra_tgl lh_12 oi_kb_pckey_fs">分数<span class="oi_kb_pckey">[ f ]</span></div>
+				<div class="oi_kb_btn3 oi_kb_facn_comp oi_kb_btn_fra_tgl dspy_n lh_12 oi_kb_pckey_fs">確定<span class="oi_kb_pckey">[ enter ]</span></div>
+			
+			
+				<div class="oi_kb_btn oi_kb_add">1</div>
+				<div class="oi_kb_btn oi_kb_add">2</div>
+				<div class="oi_kb_btn oi_kb_add">3</div>
+				<div class="oi_kb_btn oi_kb_add oi_kb_alp oi_kb_btn_fra_off"><span class="f_myo">x</span></div>
+				<div class="oi_kb_btn2 oi_kb_add oi_kb_btn_fra_tgl">+</div>
+				<div class="oi_kb_btn2 oi_kb_facn_swith oi_kb_btn_fra_tgl dspy_n fs_08em">分子／分母<span class="oi_kb_pckey">[ tab ]</span></div>
+				
+				<!-- <div class="oi_kb_btn2 oi_kb_mode" data-mode="2">X<span class="f_power">n</span></div> -->
+				<!-- <div class="oi_kb_btn2 oi_kb_add oi_kb_btn_fra_off">=</div> -->
+		
+				<div class="oi_kb_btn oi_kb_add">4</div>
+				<div class="oi_kb_btn oi_kb_add">5</div>
+				<div class="oi_kb_btn oi_kb_add">6</div>
+				<div class="oi_kb_btn oi_kb_add oi_kb_alp oi_kb_btn_fra_off"><span class="f_myo">y</span></div>
+				<div class="oi_kb_btn2 oi_kb_add oi_kb_btn_fra_off">-</div>
+				<!-- <div class="oi_kb_btn2 oi_kb_fanc oi_kb_btn_fra_off">分数</div> -->
+		
+				<div class="oi_kb_btn oi_kb_add">7</div>
+				<div class="oi_kb_btn oi_kb_add">8</div>
+				<div class="oi_kb_btn oi_kb_add">9</div>
+				<div class="oi_kb_btn oi_kb_add oi_kb_alp oi_kb_btn_fra_off"><span class="f_myo">z</span></div>
+				<div class="oi_kb_btn2 oi_kb_add oi_kb_btn_fra_off">(</div>
+				<!-- <div class="oi_kb_btn4"></div> -->
+		
+				<div class="oi_kb_btn oi_kb_add">0</div>
+				<div class="oi_kb_btn oi_kb_add oi_kb_btn_fra_off"><i class="far fa-square oi_kb_add_ex" style="margin:0 2px 0 8px;color:#ddd;"></i><span class="f_power">2</span><span class="oi_kb_pckey fc_gy oi_kb_add_ex">[ shift + 2 ]</span></div>
+				<div class="oi_kb_btn oi_kb_add oi_kb_btn_fra_off"><i class="far fa-square oi_kb_add_ex" style="margin:0 2px 0 8px;color:#ddd;"></i><span class="f_power">3</span><span class="oi_kb_pckey fc_gy oi_kb_add_ex">[ shift + 3 ]</span></div>
+				<div class="oi_kb_btn2 oi_kb_alpswc oi_kb_btn_fra_off"><span class="f_myo">abc</span></div>
+				<div class="oi_kb_btn2 oi_kb_add oi_kb_btn_fra_off">)</div>
+				<!-- <div class="oi_kb_btn4"></div> -->
+			</div>
+		</div>
+		
+		<script>
+			$(function() {
+	
+			    $('html').keydown(function(e){
+					if(oi_on == 1){
+						//alert(e.which);
+				        switch(e.which){
+				            case 39:
+				            $(".oi_kb_ca").trigger("click");
+				            break;
+				 
+				            case 37:
+				            $(".oi_kb_cb").trigger("click");
+				            break;
+			
+				            case 8:
+				            case 46:
+				            //$(".oi_kb_bs").trigger("click");
+							oi_backspace();
+				            break;
+			
+							case 27:
+				            if(oi_mode==2){
+								$(".oi_kb_facn_cansel").trigger("click");
+							}else{
+								$(".oi_kb_comp").trigger("click");
+							}
+							return false;
+				            break;
+ 
+				            case 48:
+				            case 49:
+				            case 50:
+				            case 51:
+				            case 52:
+				            case 53:
+				            case 54:
+				            case 55:
+				            case 56:
+				            case 57:
+				            case 96:
+				            case 97:
+				            case 98:
+				            case 99:
+				            case 100:
+				            case 101:
+				            case 102:
+				            case 103:
+				            case 104:
+				            case 105:
+							if(e.shiftKey){
+								if(oi_mode!=2 && (e.keyCode==56 || e.keyCode==57)){
+								}else if(oi_mode!=2 && (e.keyCode==50 || e.keyCode==98)){
+									oi_add('<span class="f_power">2</span>');
+						            break;
+								}else if(oi_mode!=2 && (e.keyCode==51 || e.keyCode==99)){
+									oi_add('<span class="f_power">3</span>');
+						            break;
+								}else{
+						            break;
+								}
+							}
+							oi_add(e.key);
+				            break;
+	
+				            case 65:
+				            case 66:
+				            case 67:
+				            case 88:
+				            case 89:
+				            case 90:
+							if(oi_mode==1){
+								oi_add('<span class="f_myo">'+e.key+'</span>');
+							}
+				            break;
+			
+				            case 107:
+				            case 187:
+							if(e.shiftKey){
+								if(e.keyCode==187){
+								}else{
+						            break;
+								}
+							}
+							if(oi_mode!=2){
+								oi_add(e.key);
+							}
+				            break;
+ 
+				            case 109:
+				            case 189:
+							if(oi_mode!=2){
+								oi_add(e.key);
+							}
+				            break;
+ 
+				            case 9:
+							if(oi_mode==2){
+					            $(".oi_kb_facn_swith").trigger("click");
+							}
+							return false;
+				            break;
+ 
+				            case 70:
+							if(oi_mode==1){
+					            $(".oi_kb_fanc").trigger("click");
+							}
+				            break;
+ 
+				            case 13:
+							if(oi_mode==1){
+					            $("#btn_calc").trigger("click");
+							}else if(oi_mode==2){
+					            $(".oi_kb_facn_comp").trigger("click");
+							}
+				            break;
+							 
+				        }
+					}
+			    });
+	
+			});
+		</script>		
+ 
+ 
+		<p class="fc_gy">入力例）<span class="f_myo">x</span><span class="f_power">2</span>+4<span class="f_myo">x</span>+3</p>
+	
+		<p class="mg_b_0">
+			<button id="btn_calc" class="mg_r_10">因数分解</button>
+			<button id="btn_clear" class="">クリア</button>
+		</p>
+	
+		<div id="ans" class="area_ans2 p_mg_b wdh_100 js_clear_display" style="display:none;">
+		</div>
+	
+	
+	</div>
+ 
+	
+	
+	<p class="mg_b_5 al_c fc_gy fs_08em" style="margin-top: 80px;">スポンサーリンク</p>	
+	<div class="flex flex_jc_sa area_ads"> 
+		<div class="" style="width: 300px;">
+			
+				<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous" data-checked-head="true"></script>
+				<!-- 電卓左下 -->
+				<ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-9242622843425228" data-ad-slot="9794945761" data-ad-format="rectangle" data-full-width-responsive="false" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_1_host" style="border: medium; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9242622843425228&amp;output=html&amp;h=250&amp;slotname=9794945761&amp;adk=4169146503&amp;adf=66193113&amp;pi=t.ma~as.9794945761&amp;w=300&amp;abgtt=6&amp;fwrn=1&amp;fwrnh=100&amp;lmt=1725359614&amp;rafmt=3&amp;format=300x250&amp;url=https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php&amp;fwr=0&amp;fwrattr=false&amp;rpe=1&amp;resp_fmts=1&amp;wgl=1&amp;dt=1725359613810&amp;bpp=6&amp;bdt=792&amp;idt=311&amp;shv=r20240828&amp;mjsv=m202408280101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Db727afe7cd762f34%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MbotgAA6X28924MoOEfaeWsDQm0Qg&amp;gpic=UID%3D00000eeae39ba8be%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MZgjXIcuGXNxBjPcC-0G3WbueCIGg&amp;eo_id_str=ID%3D4cb4e084c265284d%3AT%3D1725351814%3ART%3D1725351814%3AS%3DAA-Afjb69-e8mtY_jJF47SpeTk22&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=7623124357747&amp;frm=20&amp;pv=1&amp;u_tz=540&amp;u_his=2&amp;u_h=1080&amp;u_w=810&amp;u_ah=810&amp;u_aw=1080&amp;u_cd=32&amp;u_sd=2&amp;adx=66&amp;ady=613&amp;biw=1080&amp;bih=707&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759842%2C31086546%2C31086547%2C31086551%2C31086590%2C31086639%2C31086687%2C31086688%2C44795921%2C95338226%2C95341533%2C95341662%2C31086664%2C95340845%2C95341515%2C95341519&amp;oid=2&amp;pvsid=3906096834955936&amp;tmod=946011298&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1080%2C0%2C1080%2C810%2C1080%2C707&amp;vis=1&amp;rsz=%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;dtd=314" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIzzqLfJpogDFXhFwgUdsesz8A" data-load-complete="true"></iframe></div></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+ 
+					</div>
+		
+		<div class="sp_none mg_l_10" style="width: 300px;">
+			
+				<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous" data-checked-head="true"></script>
+				<!-- 電卓右下210620 -->
+				<ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-9242622843425228" data-ad-slot="3790677131" data-ad-format="rectangle" data-full-width-responsive="false" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_2_host" style="border: medium; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9242622843425228&amp;output=html&amp;h=250&amp;slotname=3790677131&amp;adk=3472137360&amp;adf=2318789507&amp;pi=t.ma~as.3790677131&amp;w=300&amp;abgtt=6&amp;fwrn=1&amp;fwrnh=100&amp;lmt=1725359614&amp;rafmt=3&amp;format=300x250&amp;url=https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php&amp;fwr=0&amp;fwrattr=false&amp;rpe=1&amp;resp_fmts=1&amp;wgl=1&amp;dt=1725359613816&amp;bpp=1&amp;bdt=798&amp;idt=312&amp;shv=r20240828&amp;mjsv=m202408280101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Db727afe7cd762f34%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MbotgAA6X28924MoOEfaeWsDQm0Qg&amp;gpic=UID%3D00000eeae39ba8be%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MZgjXIcuGXNxBjPcC-0G3WbueCIGg&amp;eo_id_str=ID%3D4cb4e084c265284d%3AT%3D1725351814%3ART%3D1725351814%3AS%3DAA-Afjb69-e8mtY_jJF47SpeTk22&amp;prev_fmts=0x0%2C300x250&amp;nras=1&amp;correlator=7623124357747&amp;frm=20&amp;pv=1&amp;u_tz=540&amp;u_his=2&amp;u_h=1080&amp;u_w=810&amp;u_ah=810&amp;u_aw=1080&amp;u_cd=32&amp;u_sd=2&amp;adx=385&amp;ady=613&amp;biw=1080&amp;bih=707&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759842%2C31086546%2C31086547%2C31086551%2C31086590%2C31086639%2C31086687%2C31086688%2C44795921%2C95338226%2C95341533%2C95341662%2C31086664%2C95340845%2C95341515%2C95341519&amp;oid=2&amp;pvsid=3906096834955936&amp;tmod=946011298&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1080%2C0%2C1080%2C810%2C1080%2C707&amp;vis=1&amp;rsz=%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1&amp;ifi=3&amp;uci=a!3&amp;fsb=1&amp;dtd=314" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKvzqLfJpogDFT5FwgUdZZcorw" data-load-complete="true"></iframe></div></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+ 
+					</div>
+ 
+	</div>
+	
+</div>
+ 
+<p class="mg_b_5 fc_gy al_c"><i class="fas fa-angle-double-down mg_r_5"></i>このページを友達に教える</p>
+<div class="area_sns3 mg_b_20">
+	<a href="http://line.me/R/msg/text/?https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php" rel="nofollow" target="_blank"><i class="fab fa-line"></i>LINEで送る</a>
+	<a href="https://twitter.com/intent/tweet?text=%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3+-+%E8%A8%88%E7%AE%97%E3%81%8C%E7%B0%A1%E5%8D%98%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E9%9B%BB%E5%8D%93%E3%82%B5%E3%82%A4%E3%83%88+%23%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3&amp;url=https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php" rel="nofollow" target="_blank"><i class="fab fa-twitter-square"></i>Twitterでつぶやく</a>
+	<a href="#" class="copy_url area_sns2_url"><i class="fas fa-link"></i>URLをコピーする</a>
+</div>
+ 
+<p id="area_htu_title">電卓の使い方</p>
+<div id="area_htu_list" class="mg_b_20">
+	<p>因数分解を行う式を電卓に入力し「因数分解」ボタンを押してください。</p>
+	<p>置き換えや公式を連続して使うなどの複雑な因数分解では途中式も表示されますので解き方の手順がわかります。</p>
+	<p>この電卓は中学で習う因数分解に対応しています。３次式などの高校レベルの因数分解には当電卓では対応していません。</p>
+	<p>やり直す場合は「クリア」ボタンを押すと電卓に入力された式が削除されます。</p>
+	<p>因数分解の反復練習にはこちらの問題出題ツールをご利用ください。<br><a href="../qm/factorization.php" class="link_a">因数分解の問題出題ツール</a></p>
+ 
+</div>
+ 
+<p id="area_toc_title">目次</p>
+<ul id="area_toc_list" class="sec_mg_b">
+	<li><a href="#head_1">因数分解の解説</a></li>
+	<li class="mg_l_20"><a href="#head_1_1">基本：共通因数をまとめる</a></li>
+	<li class="mg_l_20"><a href="#head_1_2">基本：公式１でまとめる</a></li>
+	<li class="mg_l_20"><a href="#head_1_3">基本：公式２でまとめる</a></li>
+	<li class="mg_l_20"><a href="#head_1_4">基本：公式３でまとめる</a></li>
+	<li class="mg_l_20"><a href="#head_1_5">基本：たすきがけ</a></li>
+	<li class="mg_l_20"><a href="#head_1_6">応用：共通因数でくくって公式に当てはめる</a></li>
+	<li class="mg_l_20"><a href="#head_1_7">応用：カッコを置き換える</a></li>
+	<li class="mg_l_20"><a href="#head_1_8">応用：連続して因数分解</a></li>
+	<li class="mg_l_20"><a href="#head_1_9">応用：項を分けて因数分解</a></li>
+	<li><a href="#head_2">因数分解の問題例</a></li>
+	<li><a href="#head_3">関連ページ</a></li>
+</ul>
+ 
+<div class="sec_mg_b pc_none tab_none">
+	<p class="mg_b_5 al_c fc_gy fs_08em" style="margin-top: 80px;">スポンサーリンク</p>	
+	<div class="flex flex_jc_sa area_ads"> 
+		<div class="" style="width: 300px;">
+					
+				<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous" data-checked-head="true"></script>
+				<!-- 解説上 -->
+				<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9242622843425228" data-ad-slot="2859394912" data-ad-format="rectangle" data-full-width-responsive="false" data-adsbygoogle-status="done"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+ 
+					</div>
+			
+	</div>
+</div>
+ 
+<section class="sec_mg_b">
+	<h2 class="head_b" id="head_1">因数分解の解説</h2>
+	
+	<p>因数分解とは、多項式を積の形に変形することです。こう聞くとわかりにくいかもしれませんが、要するにカッコ()でくくった掛け算の形に変形するという事です。計算をして答えを求めるものではなく、式を別の形に変えることが因数分解です。</p>
+	<div class="area_ex p_mg_b">
+		<span class="f_myo">x</span><span class="f_power">2</span>-5<span class="f_myo">x</span> = <span class="f_myo">x</span>(<span class="f_myo">x</span>-5)<br>
+		<span class="f_myo">x</span><span class="f_power">2</span>+6<span class="f_myo">x</span>+5 = (<span class="f_myo">x</span>+1)(<span class="f_myo">x</span>+5)
+	</div>
+ 
+	<p>カッコで囲われた式のカッコをはずすのが式の展開ですが、因数分解はこの逆でカッコでくくるように式の変形をおこないます。</p>
+	<p class="sec_mg_b">この特性を活かせば因数分解をおこなった式が合っているかを確認する場合には、因数分解した式を展開してみて元の式に戻れば因数分解できていると判断することができます。</p>
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_1">基本：共通因数をまとめる</h3>
+		<p>因数分解でまず基本となるのは、共通因数をまとめるということです。</p>
+		<p>式の項を数字の因数や文字に分解して、それぞれの項で共通するもののことを共通因数と言います。言葉だけではわかりずらいと思いますので、共通因数でまとめる因数分解の例をあげて解説します。</p>
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">x</span><span class="f_myo">y</span>+8<span class="f_myo">y</span></p>
+			
+			<p>
+				<span class="f_myo">x</span><span class="f_myo">y</span>を分解すると、<span class="f_myo">x</span>と<span class="f_myo">y</span><br>
+				8<span class="f_myo">y</span>を分解すると、8と<span class="f_myo">y</span><br>
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="f_myo">y</span>が共通しているので、<span class="f_myo">y</span>をまとめることができる<br>
+				= <span class="f_myo">y</span>(<span class="f_myo">x</span>+8)
+			</p>
+		</div>
+ 
+		<p>もし文字が２乗となっているような場合には、その文字が２つに分解できると考えます。</p>
+ 
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">x</span><span class="f_power">2</span>+4<span class="f_myo">x</span></p>
+			
+			<p>
+				<span class="f_myo">x</span><span class="f_power">2</span>を分解すると、<span class="f_myo">x</span>と<span class="f_myo">x</span><br>
+				4<span class="f_myo">x</span>を分解すると、4と<span class="f_myo">x</span><br>
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="f_myo">x</span>が共通しているので、<span class="f_myo">x</span>をまとめることができる<br>
+				= <span class="f_myo">x</span>(<span class="f_myo">x</span>+4)
+			</p>
+		</div>
+ 
+		<p>文字は比較的簡単に分解できるますが、数字は因数で分解して共通の因数を探す必要があります。上記の例では数字の因数は1と自身の数だけになるため無視していますが、以下の例では数字を因数に分解して共通因数を探して因数分解をおこないます。</p>
+ 
+		<div class="area_ex p_mg_b">
+			<p>5<span class="f_myo">x</span><span class="f_power">2</span>-15<span class="f_myo">x</span></p>
+			
+			<p>
+				5<span class="f_myo">x</span><span class="f_power">2</span>を分解すると、1と5と<span class="f_myo">x</span>と<span class="f_myo">x</span><br>
+				15<span class="f_myo">x</span>を分解すると、1と3と5と15と<span class="f_myo">x</span><br>
+			</p>
+ 
+			<p class="mg_b_0">
+				5と<span class="f_myo">x</span>が共通しているので、5と<span class="f_myo">x</span>をまとめることができる<br>
+				= 5<span class="f_myo">x</span>(<span class="f_myo">x</span>-3)
+			</p>
+		</div>
+		
+		<p>この共通因数でくくるのが因数分解の基本となります。数字だけや文字だけをまとめると間違いになるため、両方でまとめることができる場合には必ず両方でまとめるようにしてください。</p>
+ 
+	</section>
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_2">基本：公式１でまとめる</h3>
+		<p class="area_fomula_title">公式１</p>
+		<div class="area_fomula p_mg_b">
+			<span class="f_myo">x</span><span class="f_power">2</span>+(<span class="f_myo">a</span>+<span class="f_myo">b</span>)<span class="f_myo">x</span>+<span class="f_myo">a</span><span class="f_myo">b</span> = (<span class="f_myo">x</span>+<span class="f_myo">a</span>)(<span class="f_myo">x</span>+<span class="f_myo">b</span>)
+		</div>
+		<p>ポイントになるのは<span class="f_myo">a</span>と<span class="f_myo">b</span>です。２つ目の項は<span class="f_myo">a</span>と<span class="f_myo">b</span>の和、３つ目の項は<span class="f_myo">a</span>と<span class="f_myo">b</span>の積になっています。つまり<span class="f_myo">a</span>と<span class="f_myo">b</span>の組み合わせを見つけることが公式１を使った因数分解でのポイントとなります。</p>
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">x</span><span class="f_power">2</span>+6<span class="f_myo">x</span>+5</p>
+ 
+			<p>
+				6<span class="f_myo">x</span>は、(1+5)<span class="f_myo">x</span><br>
+				5は、(1×5)<br>
+			</p>
+ 
+			<p class="mg_b_0">
+				1と5が公式の<span class="f_myo">a</span>と<span class="f_myo">b</span>になるため<br>
+				= (<span class="f_myo">x</span>+1)(<span class="f_myo">x</span>+5)<br>
+			</p>			
+		</div>
+ 
+		<p>この公式１を使った因数分解では、符号に注意する必要があります。符号によって３つのパターンがあります。</p>
+		<div class="area_green p_mg_b">
+			<p>
+				<span class="fc_gy">▼(<span class="f_myo">a</span>+<span class="f_myo">b</span>)<span class="f_myo">x</span>と(<span class="f_myo">a</span>×<span class="f_myo">b</span>)の項が正のとき</span><br>
+				<span class="f_myo">x</span><span class="f_power">2</span><span class="fc_r">+</span>(<span class="f_myo">a</span>+<span class="f_myo">b</span>)<span class="f_myo">x</span><span class="fc_r">+</span><span class="f_myo">a</span><span class="f_myo">b</span> = (<span class="f_myo">x</span><span class="fc_r">+</span><span class="f_myo">a</span>)(<span class="f_myo">x</span><span class="fc_r">+</span><span class="f_myo">b</span>)
+			</p>
+ 
+			<p>
+				<span class="fc_gy">▼(<span class="f_myo">a</span>×<span class="f_myo">b</span>)の項が負のとき</span><br>
+				<span class="f_myo">x</span><span class="f_power">2</span><span class="fc_r">+</span>(<span class="f_myo">a</span>+<span class="f_myo">b</span>)<span class="f_myo">x</span><span class="fc_r">-</span><span class="f_myo">a</span><span class="f_myo">b</span> = (<span class="f_myo">x</span><span class="fc_r">-</span><span class="f_myo">a</span>)(<span class="f_myo">x</span><span class="fc_r">+</span><span class="f_myo">b</span>)
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼(<span class="f_myo">a</span>+<span class="f_myo">b</span>)<span class="f_myo">x</span>の項が負で(<span class="f_myo">a</span>×<span class="f_myo">b</span>)の項が正のとき</span><br>
+				<span class="f_myo">x</span><span class="f_power">2</span><span class="fc_r">-</span>(<span class="f_myo">a</span>+<span class="f_myo">b</span>)<span class="f_myo">x</span><span class="fc_r">+</span><span class="f_myo">a</span><span class="f_myo">b</span> = (<span class="f_myo">x</span><span class="fc_r">-</span><span class="f_myo">a</span>)(<span class="f_myo">x</span><span class="fc_r">-</span><span class="f_myo">b</span>)
+			</p>
+		</div>
+ 
+ 
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">x</span><span class="f_power">2</span>+5<span class="f_myo">x</span>+6<br>
+			= (<span class="f_myo">x</span>+2)(<span class="f_myo">x</span>+3)</p>
+ 
+			<p><span class="f_myo">x</span><span class="f_power">2</span>+<span class="f_myo">x</span>-6<br>
+			= (<span class="f_myo">x</span>-2)(<span class="f_myo">x</span>+3)</p>
+ 
+			<p class="mg_b_0"><span class="f_myo">x</span><span class="f_power">2</span>-5<span class="f_myo">x</span>+6<br>
+			= (<span class="f_myo">x</span>-2)(<span class="f_myo">x</span>-3)</p>
+		</div>
+ 
+ 
+	</section>
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_3">基本：公式２でまとめる</h3>
+ 
+		<p class="area_fomula_title">公式２</p>
+		<div class="area_fomula p_mg_b">
+			<span class="f_myo">x</span><span class="f_power">2</span>+2<span class="f_myo">a</span><span class="f_myo">x</span>+<span class="f_myo">a</span><span class="f_power">2</span> = (<span class="f_myo">x</span>+<span class="f_myo">a</span>)<span class="f_power">2</span>
+		</div>
+ 
+		<p>公式２では、２番目の項が３番目の項の平方根×2になることがポイントです。この公式２は公式１と似ていて、公式１の場合は異なる数字の和と積だったのに対して、公式２は同じ数字の和と積になっています。</p>
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">x</span><span class="f_power">2</span>+6<span class="f_myo">x</span>+9</p>
+			
+			<p class="mg_b_0">9は3<span class="f_power">2</span>であり、3×2は6なので公式2に当てはまる<br>
+			= (<span class="f_myo">x</span>+3)<span class="f_power">2</span></p>
+		</div>
+ 
+		<p>公式２を使う因数分解でも符号によって２つのパターンがあります。</p>
+		<div class="area_green p_mg_b">
+			<p>
+				<span class="fc_gy">▼2<span class="f_myo">a</span><span class="f_myo">x</span>の項が正のとき</span><br>
+				<span class="f_myo">x</span><span class="f_power">2</span><span class="fc_r">+</span>2<span class="f_myo">a</span><span class="f_myo">x</span>+<span class="f_myo">a</span><span class="f_power">2</span> = (<span class="f_myo">x</span><span class="fc_r">+</span><span class="f_myo">a</span>)<span class="f_power">2</span>
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼2<span class="f_myo">a</span><span class="f_myo">x</span>の項が負のとき</span><br>
+				<span class="f_myo">x</span><span class="f_power">2</span><span class="fc_r">-</span>2<span class="f_myo">a</span><span class="f_myo">x</span>+<span class="f_myo">a</span><span class="f_power">2</span> = (<span class="f_myo">x</span><span class="fc_r">-</span><span class="f_myo">a</span>)<span class="f_power">2</span>
+			</p>
+		</div>
+		<div class="area_ex p_mg_b">
+			<p>
+				<span class="f_myo">x</span><span class="f_power">2</span>+8<span class="f_myo">x</span>+16<br>
+				= (<span class="f_myo">x</span>+4)<span class="f_power">2</span>
+			</p>
+			
+			<p class="mg_b_0">
+				<span class="f_myo">x</span><span class="f_power">2</span>-8<span class="f_myo">x</span>+16<br>
+				= (<span class="f_myo">x</span>-4)<span class="f_power">2</span>
+			</p>
+		</div>
+		<p>ちなみに公式２を使う因数分解では、<span class="f_myo">a</span><span class="f_power">2</span>の項がマイナスになることはありません。同じ数字同士の２乗なので必ずプラスになります。なので<span class="f_myo">a</span><span class="f_power">2</span>の項がマイナスの場合はこの公式２に当てはまることはありません。</p>
+ 
+ 
+	</section>
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_4">基本：公式３でまとめる</h3>
+ 
+		<p class="area_fomula_title">公式３</p>
+		<div class="area_fomula p_mg_b">
+			<span class="f_myo">x</span><span class="f_power">2</span>-<span class="f_myo">a</span><span class="f_power">2</span> = (<span class="f_myo">x</span>+<span class="f_myo">a</span>)(<span class="f_myo">x</span>-<span class="f_myo">a</span>)
+		</div>
+ 
+		<p>２乗のものを２乗のもので引いた式は、和と差の積に変換できるのが因数分解の公式３です。文字の２乗はわかりやすいですが、気をつけたいのは数字の２乗です。数字は平方根が整数になるかを確認する必要があります。</p>
+ 
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">x</span><span class="f_power">2</span>-16</p>
+			<p class="mg_b_0">16は4<span class="f_power">2</span>なので公式3に当てはまる<br>
+			= (<span class="f_myo">x</span>+4)(<span class="f_myo">x</span>-4)</p>
+		</div>
+ 
+		<p>公式３を使う因数分解では、他の公式と違い符号によるパターンはありませんが、項が逆になっているときには注意しましょう。</p>
+		<div class="area_ex p_mg_b">
+			<p>-9+<span class="f_myo">x</span><span class="f_power">2</span></p>
+			<p class="mg_b_0">項を入れ替えると、<span class="f_myo">x</span><span class="f_power">2</span>-9となり<br>
+			9は3<span class="f_power">2</span>なので公式3に当てはまる<br>
+			= (<span class="f_myo">x</span>+3)(<span class="f_myo">x</span>-3)</p>
+		</div>
+ 
+ 
+ 
+	</section>
+ 
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_5">基本：たすきがけ</h3>
+		<p>たすきがけと呼ばれる手法を使った因数分解をおこないます。以下の問題を例に解説します。</p>
+		<div class="area_ex p_mg_b">
+			3<span class="f_myo">x</span><span class="f_power">2</span>-11<span class="f_myo">x</span>+6
+		</div>
+ 
+		<p>まず、以下のような図を作り、問題の係数を配置します。</p>
+		<p><img src="../_image/factorization1.png" style="width:100%;max-width:400px;height:auto;border:3px solid #999;"></p>
+		<p>図の<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#ff6666;border:2px solid #333;margin:0 5px;"></span>と<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#ffffcc;border:2px solid #333;margin:0 5px;"></span>には、積が<span class="f_myo">x</span><span class="f_power">2</span>の係数である３となる数字が入ります。3になる積は3×1や1×3があります。</p>
+		<p>同じように<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#ccff99;border:2px solid #333;margin:0 5px;"></span>と<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#99ccff;border:2px solid #333;margin:0 5px;"></span>には、積が定数項の係数である6となる数字が入ります。6になる積は1×6、2×3、3×2、6×1、-1×-6、-2×-3、-3×-2、-6×-1があります。マイナスの数字もあるという点に注意してください。</p>
+		<p>数字を実際に入れてみてななめがけ、つまり<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#ff6666;border:2px solid #333;margin:0 5px;"></span>×<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#99ccff;border:2px solid #333;margin:0 5px;"></span>を<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#cc99ff;border:2px solid #333;margin:0 5px;"></span>に、<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#ffffcc;border:2px solid #333;margin:0 5px;"></span>×<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#ccff99;border:2px solid #333;margin:0 5px;"></span>を<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#ff9933;border:2px solid #333;margin:0 5px;"></span>に入れます。そして、<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#ff9933;border:2px solid #333;margin:0 5px;"></span>と<span style="vertical-align: 0em;display:inline-block;width:20px;height:1em;background:#cc99ff;border:2px solid #333;margin:0 5px;"></span>を足した値が<span class="f_myo">x</span>の係数である-11になるパターンを探します。</p>
+		<p>数字を入れて図が成り立つパターンを探すと以下のように数字が入ります。</p>
+		<p><img src="../_image/factorization2.png" style="width:100%;max-width:400px;height:auto;border:3px solid #999;"></p>
+		<p>図ができたら以下のように答えを導くことができます。ななめがけするのはこの答えの配置に持って行きやすいようにです。</p>
+		<p><img src="../_image/factorization3.png" style="width:100%;max-width:400px;height:auto;border:3px solid #999;"></p>
+		<p>つまり、答えは<span class="f_nf">(3<span class="f_myo">x</span>-2)(<span class="f_myo">x</span>-3)</span>となります。</p>
+	</section>
+ 
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_6">応用：共通因数でくくって公式に当てはめる</h3>
+		<p>ここからは基本をふまえて応用編になります。共通因数でくくると公式に当てはめるという２つの因数分解の基本を組み合わせます。まず式を共通因数でくくった後、カッコ内の式を公式に当てはめるという因数分解の方法です。</p>
+		<div class="area_ex p_mg_b">
+			<p>4<span class="f_myo">x</span><span class="f_power">2</span><span class="f_myo">y</span>+28<span class="f_myo">x</span><span class="f_myo">y</span>+48<span class="f_myo">y</span></p>
+ 
+			<p>
+				<span class="fc_gy">▼4<span class="f_myo">y</span>でくくる</span><br>
+				= 4<span class="f_myo">y</span>(<span class="f_myo">x</span><span class="f_power">2</span>+7<span class="f_myo">x</span>+12)
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼カッコ内を公式１に当てはめる</span><br>
+				= 4<span class="f_myo">y</span>(<span class="f_myo">x</span>+3)(<span class="f_myo">x</span>+4)
+			</p>
+		</div>
+ 
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">a</span><span class="f_myo">x</span><span class="f_power">2</span>-10<span class="f_myo">a</span><span class="f_myo">x</span>+25<span class="f_myo">a</span></p>
+ 
+			<p>
+				<span class="fc_gy">▼<span class="f_myo">a</span>でくくる</span><br>
+				= <span class="f_myo">a</span>(<span class="f_myo">x</span><span class="f_power">2</span>-10<span class="f_myo">x</span>+25)
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼カッコ内を公式２に当てはめる</span><br>
+				= <span class="f_myo">a</span>(<span class="f_myo">x</span>-5)<span class="f_power">2</span>
+			</p>
+		</div>
+ 
+		<div class="area_ex p_mg_b">
+			<p>3<span class="f_myo">x</span><span class="f_power">3</span>-48<span class="f_myo">x</span></p>
+ 
+			<p>
+				<span class="fc_gy">▼3<span class="f_myo">x</span>でくくる</span><br>
+				= 3<span class="f_myo">x</span>(<span class="f_myo">x</span><span class="f_power">2</span>-16)
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼カッコ内を公式３に当てはめる</span><br>
+				= 3<span class="f_myo">x</span>(<span class="f_myo">x</span>+4)(<span class="f_myo">x</span>-4)
+			</p>
+		</div>
+ 
+	</section>
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_7">応用：カッコを置き換える</h3>
+		<p>カッコがある式では、カッコを文字に置き換えて因数分解を試みます。カッコ内が同じときは同じ文字に置き換えてから共通因数をくくったり公式に当てはめます。最後に置き換えたカッコを元に戻すことを忘れずにおこないましょう。</p>
+ 
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">x</span>(<span class="f_myo">a</span>+<span class="f_myo">b</span>)-7(<span class="f_myo">a</span>+<span class="f_myo">b</span>)</p>
+ 
+			<p>
+				<span class="fc_gy">▼(<span class="f_myo">a</span>+<span class="f_myo">b</span>)を<span class="f_myo">A</span>に置き換える</span><br>
+				= <span class="f_myo">x</span><span class="f_myo">A</span>-7<span class="f_myo">A</span>
+			</p>
+ 
+			<p>
+				<span class="fc_gy">▼<span class="f_myo">A</span>でくくる</span><br>
+				= <span class="f_myo">A</span>(<span class="f_myo">x</span>-7)
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼置き換えた<span class="f_myo">A</span>を元に戻す</span><br>
+				= (<span class="f_myo">a</span>+<span class="f_myo">b</span>)(<span class="f_myo">x</span>-7)
+			</p>
+		</div>
+ 
+		<div class="area_ex p_mg_b">
+			<p>(<span class="f_myo">a</span>+<span class="f_myo">b</span>)<span class="f_power">2</span>-7(<span class="f_myo">a</span>+<span class="f_myo">b</span>)+10</p>
+ 
+			<p>
+				<span class="fc_gy">▼(<span class="f_myo">a</span>+<span class="f_myo">b</span>)を<span class="f_myo">A</span>に置き換える</span><br>
+				= <span class="f_myo">A</span><span class="f_power">2</span>-7<span class="f_myo">A</span>+10
+			</p>
+ 
+			<p>
+				<span class="fc_gy">▼公式１に当てはめる</span><br>
+				= (<span class="f_myo">A</span>-2)(<span class="f_myo">A</span>-5)
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼置き換えた<span class="f_myo">A</span>を元に戻す</span><br>
+				= (<span class="f_myo">a</span>+<span class="f_myo">b</span>-2)(<span class="f_myo">a</span>+<span class="f_myo">b</span>-5)
+			</p>
+		</div>
+ 
+	</section>
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_8">応用：連続して因数分解</h3>
+		<p>式を部分的に因数分解してカッコでくくった部分を文字に置き換えてさらに因数分解をおこないます。</p>
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">x</span><span class="f_power">2</span>+10<span class="f_myo">x</span>+25-36<span class="f_myo">a</span><span class="f_power">2</span></p>
+ 
+			<p>
+				<span class="fc_gy">▼部分的に公式2に当てはめる</span><br>
+				= (<span class="f_myo">x</span>+5)<span class="f_power">2</span>-36<span class="f_myo">a</span><span class="f_power">2</span>
+			</p>
+ 
+			<p>
+				<span class="fc_gy">▼カッコを<span class="f_myo">A</span>に置き換える</span><br>
+				= <span class="f_myo">A</span><span class="f_power">2</span>-36<span class="f_myo">a</span><span class="f_power">2</span>
+			</p>
+ 
+			<p>
+				<span class="fc_gy">▼公式３に当てはめる</span><br>
+				= (<span class="f_myo">A</span>+6<span class="f_myo">a</span>)(<span class="f_myo">A</span>-6<span class="f_myo">a</span>)
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼置き換えた<span class="f_myo">A</span>を元に戻す</span><br>
+				= (<span class="f_myo">x</span>+5+6<span class="f_myo">a</span>)(<span class="f_myo">x</span>+5-6<span class="f_myo">a</span>)
+			</p>
+		</div>
+ 
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">a</span><span class="f_power">2</span>-<span class="f_myo">x</span><span class="f_power">2</span>+6<span class="f_myo">x</span>-9</p>
+ 
+			<p>
+				<span class="fc_gy">▼部分的に-1でくくって公式2に当てはめる</span><br>
+				= <span class="f_myo">a</span><span class="f_power">2</span>-(<span class="f_myo">x</span><span class="f_power">2</span>-6<span class="f_myo">x</span>+9)<br>
+				= <span class="f_myo">a</span><span class="f_power">2</span>-(<span class="f_myo">x</span>-3)<span class="f_power">2</span>
+			</p>
+ 
+ 
+			<p>
+				<span class="fc_gy">▼カッコを<span class="f_myo">A</span>に置き換える</span><br>
+				= <span class="f_myo">a</span><span class="f_power">2</span>-<span class="f_myo">A</span><span class="f_power">2</span>
+			</p>
+ 
+			<p>
+				<span class="fc_gy">▼公式３に当てはめる</span><br>
+				= (<span class="f_myo">a</span>+<span class="f_myo">A</span>)(<span class="f_myo">a</span>-<span class="f_myo">A</span>)
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼置き換えた<span class="f_myo">A</span>を元に戻す</span><br>
+				= (<span class="f_myo">a</span>+<span class="f_myo">x</span>-3)(<span class="f_myo">a</span>-<span class="f_myo">x</span>+3)<br>
+				<span class="fc_r">※<span class="f_myo">A</span>の前がマイナスの場合、符号を反転させる</span>
+			</p>
+		</div>
+ 
+	</section>
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_9">応用：項を分けて因数分解</h3>
+		<p>式の項を分割してそれぞれの共通因数をくくった後に、カッコを置き換えしさらに共通因数をくくります。</p>
+ 
+		<div class="area_ex p_mg_b">
+			<p><span class="f_myo">x</span><span class="f_myo">a</span>-<span class="f_myo">x</span><span class="f_myo">b</span>-5<span class="f_myo">a</span>+5<span class="f_myo">b</span></p>
+ 
+			<p>
+				<span class="fc_gy">▼式を分割</span><br>
+				= (<span class="f_myo">x</span><span class="f_myo">a</span>-<span class="f_myo">x</span><span class="f_myo">b</span>)-(5<span class="f_myo">a</span>-5<span class="f_myo">b</span>)<br>
+				<span class="fc_r">※後ろのカッコの前はマイナスなので、カッコ内の符号は反転させる</span>
+			</p>
+ 
+ 
+			<p>
+				<span class="fc_gy">▼カッコ内の共通因数をくくる</span><br>
+				= <span class="f_myo">x</span>(<span class="f_myo">a</span>-<span class="f_myo">b</span>)-5(<span class="f_myo">a</span>-<span class="f_myo">b</span>)<br>
+			</p>
+ 
+			<p>
+				<span class="fc_gy">▼(<span class="f_myo">a</span>-<span class="f_myo">b</span>)を<span class="f_myo">A</span>に置き換える</span><br>
+				= <span class="f_myo">x</span><span class="f_myo">A</span>-5<span class="f_myo">A</span><br>
+			</p>
+ 
+			<p>
+				<span class="fc_gy">▼<span class="f_myo">A</span>をくくる</span><br>
+				= <span class="f_myo">A</span>(<span class="f_myo">x</span>-5)<br>
+			</p>
+ 
+			<p class="mg_b_0">
+				<span class="fc_gy">▼置き換えた<span class="f_myo">A</span>を元に戻す</span><br>
+				= (<span class="f_myo">a</span>-<span class="f_myo">b</span>)(<span class="f_myo">x</span>-5)<br>
+			</p>
+		</div>
+ 
+	</section>
+ 
+		
+<p class="mg_b_5 al_c fc_gy fs_08em sec_mg_t" style="margin-top: 80px;">スポンサーリンク</p>	
+<div class="flex flex_jc_sa area_ads"> 
+	<div class="" style="width: 300px;">
+		
+			<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous" data-checked-head="true"></script>
+			<!-- 解説下左 -->
+			<ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-9242622843425228" data-ad-slot="5093293120" data-ad-format="rectangle" data-full-width-responsive="false" data-adsbygoogle-status="done"><div id="aswift_3_host" style="border: medium; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+ 
+			</div>
+	
+	<div class="sp_none mg_l_10" style="width: 300px;">
+		
+			<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous" data-checked-head="true"></script>
+			<!-- 解説下右 -->
+			<ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-9242622843425228" data-ad-slot="9383891920" data-ad-format="rectangle" data-full-width-responsive="false" data-adsbygoogle-status="done"><div id="aswift_4_host" style="border: medium; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+ 
+			</div>
+ 
+</div>
+ 
+ 
+</section>
+ 
+<section class="sec_mg_b">
+	<h2 class="head_b" id="head_2">因数分解の問題例</h2>
+ 
+	<div class="area_ex_q">
+		4<span class="f_myo">x</span><span class="f_power">2</span>+16<span class="f_myo">x</span>
+	</div>
+	<div class="area_ex_a">
+		<span class="fc_gy">▼共通因数（4<span class="f_myo">x</span>）でくくる</span><br>
+		= 4<span class="f_myo">x</span>(<span class="f_myo">x</span>+4)
+	</div>
+ 
+	<div class="area_ex_q">
+		<span class="f_myo">y</span><span class="f_power">2</span>-7<span class="f_myo">y</span>-18
+	</div>
+	<div class="area_ex_a">
+		<span class="fc_gy">▼公式１に当てはめる</span><br>
+		= (<span class="f_myo">y</span>-9)(<span class="f_myo">y</span>+2)
+	</div>
+ 
+	<div class="area_ex_q">
+		<span class="f_myo">a</span><span class="f_power">2</span>-24<span class="f_myo">a</span>+144
+	</div>
+	<div class="area_ex_a">
+		<span class="fc_gy">▼公式２に当てはめる</span><br>
+		= (<span class="f_myo">a</span>-12)<span class="f_power">2</span>
+	</div>
+ 
+	<div class="area_ex_q">
+		<span class="f_myo">b</span><span class="f_power">2</span>-81
+	</div>
+	<div class="area_ex_a">
+		<span class="fc_gy">▼公式３に当てはめる</span><br>
+		= (<span class="f_myo">b</span>+9)(<span class="f_myo">b</span>-9)
+	</div>
+ 
+	<div class="area_ex_q">
+		4<span class="f_myo">x</span><span class="f_power">2</span><span class="f_myo">y</span>-36<span class="f_myo">y</span>
+	</div>
+	<div class="area_ex_a">
+		<span class="fc_gy">▼共通因数（4<span class="f_myo">y</span>）をくくる</span><br>
+		= 4<span class="f_myo">y</span>(<span class="f_myo">x</span><span class="f_power">2</span>-9)<br>
+		<span class="fc_gy">▼カッコ内を公式３に当てはめる</span><br>
+		= 4<span class="f_myo">y</span>(<span class="f_myo">x</span>+3)(<span class="f_myo">x</span>-3)
+	</div>
+ 
+	<div class="area_ex_q">
+		<span class="f_myo">x</span><span class="f_power">2</span>-2<span class="f_myo">x</span>(<span class="f_myo">a</span>-<span class="f_myo">b</span>)+(<span class="f_myo">a</span>-<span class="f_myo">b</span>)<span class="f_power">2</span>
+	</div>
+	<div class="area_ex_a">
+		<span class="fc_gy">▼カッコを<span class="f_myo">A</span>に置き換える</span><br>
+		= <span class="f_myo">x</span><span class="f_power">2</span>-2<span class="f_myo">x</span><span class="f_myo">A</span>+<span class="f_myo">A</span><span class="f_power">2</span><br>
+		<span class="fc_gy">▼公式２に当てはめる</span><br>
+		= (<span class="f_myo">x</span>-<span class="f_myo">A</span>)<span class="f_power">2</span><br>
+		<span class="fc_gy">▼置き換えた<span class="f_myo">A</span>を元に戻す</span><br>
+		= (<span class="f_myo">x</span>-<span class="f_myo">a</span>+<span class="f_myo">b</span>)<span class="f_power">2</span><br>
+		<span class="fc_gy">※<span class="f_myo">A</span>の前がマイナスなので符号を反転</span>
+	</div>
+ 
+	<div class="area_ex_q">
+		9<span class="f_myo">a</span><span class="f_power">2</span>-<span class="f_myo">x</span><span class="f_power">2</span>+20<span class="f_myo">x</span>-100	
+	</div>
+	<div class="area_ex_a">
+		<span class="fc_gy">▼部分的に公式２に当てはめる</span><br>
+		= 9<span class="f_myo">a</span><span class="f_power">2</span>-(<span class="f_myo">x</span>-10)<span class="f_power">2</span><br>
+		<span class="fc_gy">▼カッコを<span class="f_myo">A</span>に置き換える</span><br>
+		= 9<span class="f_myo">a</span><span class="f_power">2</span>-<span class="f_myo">A</span><span class="f_power">2</span><br>
+		<span class="fc_gy">▼公式３に当てはめる</span><br>
+		= (3<span class="f_myo">a</span>+<span class="f_myo">A</span>)(3<span class="f_myo">a</span>-<span class="f_myo">A</span>)<br>
+		<span class="fc_gy">▼置き換えた<span class="f_myo">A</span>を元に戻す</span><br>
+		= (3<span class="f_myo">a</span>+<span class="f_myo">x</span>-10)(3<span class="f_myo">a</span>-<span class="f_myo">x</span>+10)<br>
+		<span class="fc_gy">※<span class="f_myo">A</span>の前がマイナスの場合は符号を反転</span>
+	</div>
+ 
+	<div class="area_ex_q">
+		<span class="f_myo">x</span><span class="f_power">3</span>-2<span class="f_myo">x</span><span class="f_power">2</span>-3<span class="f_myo">x</span><span class="f_myo">y</span>+6<span class="f_myo">y</span>
+	</div>
+	<div class="area_ex_a">
+		<span class="fc_gy">▼式を分割</span><br>
+		= (<span class="f_myo">x</span><span class="f_power">3</span>-2<span class="f_myo">x</span><span class="f_power">2</span>)-(3<span class="f_myo">x</span><span class="f_myo">y</span>-6<span class="f_myo">y</span>)<br>
+		<span class="fc_gy">▼カッコ内を共通因数でくくる</span><br>
+		= <span class="f_myo">x</span><span class="f_power">2</span>(<span class="f_myo">x</span>-2)-3<span class="f_myo">y</span>(<span class="f_myo">x</span>-2)<br>
+		<span class="fc_gy">▼カッコ内を<span class="f_myo">A</span>に置き換える</span><br>
+		= <span class="f_myo">x</span><span class="f_power">2</span><span class="f_myo">A</span>-3<span class="f_myo">y</span><span class="f_myo">A</span><br>
+		<span class="fc_gy">▼<span class="f_myo">A</span>でくくる</span><br>
+		= <span class="f_myo">A</span>(<span class="f_myo">x</span><span class="f_power">2</span>-3<span class="f_myo">y</span>)<br>
+		<span class="fc_gy">▼置き換えた<span class="f_myo">A</span>を元に戻す</span><br>
+		= (<span class="f_myo">x</span>-2)(<span class="f_myo">x</span><span class="f_power">2</span>-3<span class="f_myo">y</span>)<br>
+	</div>
+ 
+</section>
+ 
+ 
+<section class="">
+	<h2 class="head_b" id="head_3">関連ページ</h2>
+	<ul class="list_relation">
+		<li><a href="../integer/factor.php">因数</a></li>
+		<li><a href="../calc/unfoid.php">式の展開</a></li>
+		<li><a href="../calc/char-exp.php">文字式</a></li>
+		<li><a href="../calc/linear-equation.php">方程式</a></li>
+		<li><a href="../calc/quad-equation.php">二次方程式</a></li>
+		<li><a href="../calc/cross.php">因数分解(たすき掛け)</a></li>
+	</ul>
+</section>
+ 
+ 
+<script src="../_js/oi.js?20220723"></script>
+ 
+<script>
+var counter_num = 0;
+var ads_counter = 0;
+var counter_id = 1574761602;
+var doAjaxBeforeUnloadEnabled = true;
+ 
+var doAjaxBeforeUnload = function (evt) {
+	if (!doAjaxBeforeUnloadEnabled) { return; }
+	doAjaxBeforeUnloadEnabled = false;
+	counter_request(true);
+}
+ 
+var doAjaxPageHide = function (evt) {
+	if (!doAjaxBeforeUnloadEnabled) { return; }
+	doAjaxBeforeUnloadEnabled = false;
+	counter_request(false);
+}
+ 
+function counter_request(flg){
+	if(counter_num > 0){
+	    $.ajax({
+	    	async : flg,
+	        url : "../_lib/counter.php?i=" + counter_id + "&c=" + counter_num,
+	        type: "GET",
+	  		dataType: 'json',
+			data: '',
+	        success: function(response) {
+	        },
+	        error: function(xhr) {
+	        }
+	    });			
+		counter_num = 0;		
+	}
+	
+	//ads_counter++;
+	//if(ads_counter > 2){ 
+	//	$('.area_ads').hide(); 
+	//}
+	
+}
+ 
+$(document).ready(function () {
+	window.onbeforeunload = doAjaxBeforeUnload;
+	window.onpagehide = doAjaxPageHide;
+});
+ 
+function setVisibilityEvent(){
+	var hidden, visibilityChange;
+	if (typeof document.hidden !== "undefined") {
+		hidden = "hidden";
+		visibilityChange = "visibilitychange";
+	} else if (typeof document.mozHidden !== "undefined") {
+		hidden = "mozHidden";
+		visibilityChange = "mozvisibilitychange";
+	} else if (typeof document.msHidden !== "undefined") {
+ 		hidden = "msHidden";
+		visibilityChange = "msvisibilitychange";
+	} else if (typeof document.webkitHidden !== "undefined") {
+		hidden = "webkitHidden";
+		visibilityChange = "webkitvisibilitychange";
+	}
+	document.addEventListener(visibilityChange, function(){
+		if(document.hidden){
+			counter_request(true);
+    	}
+	}, false);
+}
+ 
+setVisibilityEvent();
+ 
+</script>
+<script src="../_js/calc_factorization.js?202100808"></script>
+ 
+ 
+ 
+						<section class="sec_mg_t">
+	<h2 class="head_b">よく見られているページ</h2>
+	<dl class="dl_popular">
+ 
+		<dt><a href="../fraction/aboutminutes.php">約分の電卓</a></dt>
+		<dd>分母と分子を入力すると約分された分数を表示する電卓です。大きい数の分数でも簡単に約分をおこなうことができます。</dd>
+ 
+		<dt><a href="../fraction/mix.php">分数の混合計算の電卓</a></dt>
+		<dd>分数の四則演算ができる電卓です。３つ以上の分数の計算をおこなったり整数や帯分数との計算にも対応しています。</dd>
+ 
+		<dt><a href="../calc/factorization.php">因数分解の電卓</a></dt>
+		<dd>入力された式を因数分解できる電卓です。解き方がいくつもある因数分解ですが、この電卓を使えば簡単に因数分解がおこなえます。</dd>
+ 
+		<dt><a href="../calc/sim-equation.php">連立方程式の電卓</a></dt>
+		<dd>２つの方程式を入力することで連立方程式として解くことができる電卓です。計算方法は加減法または代入法で選択でき、途中式も表示されます。</dd>
+ 
+		<dt><a href="../qm/">中学数学の問題出題ツール一覧</a></dt>
+		<dd>中学数学の問題をプログラムで作成して出題するツールです。問題を何度でも解く練習ができて答えもすぐに確認することができます。</dd>
+ 
+		<dt><a href="../qm/factorization.php">因数分解の問題出題ツール</a></dt>
+		<dd>因数分解の問題を出題するツールです。条件を指定することで因数分解の問題が出題され、反復練習に役に立つツールです。</dd>
+ 
+ 
+		<!--
+		<dt><a href="../fraction/pass.php">通分の電卓</a></dt>
+		<dd>分数を通分できる電卓です。３つ以上の分数を通分することもできます。</dd>
+ 
+		<dt><a href="../integer/gcd.php">最大公約数の電卓</a></dt>
+		<dd>２つの数を入力すると、それらの最大公約数を計算して表示する電卓です。３つ以上の数の最大公約数を求めることにも対応しています。</dd>
+		-->
+		
+	</dl>
+</section>
+						<div class="area_mainfooter">
+		
+	<a href="http://line.me/R/msg/text/?https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php" rel="nofollow" target="_blank" class="area_mainfooter_link flex flex_jc_sb flex_ai_c mg_b_10">
+		<i class="fab fa-line mg_r_10" style="font-size:60px;"></i>
+		<div style="width: 100%;">
+			LINE<br>
+			<span style="color:#ccc;font-size:0.9em;">因数分解の電卓ページURLをLINEで友達に送ることができます</span>
+		</div>
+	</a>
+ 
+	<a href="https://twitter.com/intent/tweet?text=%E5%9B%A0%E6%95%B0%E5%88%86%E8%A7%A3+-+%E8%A8%88%E7%AE%97%E3%81%8C%E7%B0%A1%E5%8D%98%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E9%9B%BB%E5%8D%93%E3%82%B5%E3%82%A4%E3%83%88&amp;url=https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php" rel="nofollow" target="_blank" class="area_mainfooter_link flex flex_jc_sb flex_ai_c mg_b_10">
+		<i class="fab fa-twitter-square mg_r_10" style="font-size:60px;"></i>
+		<div style="width: 100%;">
+			Twitter<br>
+			<span style="color:#ccc;font-size:0.9em;">因数分解の電卓ページURLをTwitterでつぶやいて共有できます</span>
+		</div>
+	</a>
+ 
+	<a href="#" class="area_mainfooter_link copy_url flex flex_jc_sb flex_ai_c mg_b_0">
+		<i class="fas fa-clipboard al_c mg_r_10" style="font-size:60px;width:60px;"></i>
+		<div style="width: 100%;">
+			URLコピー<br>
+			<span style="color:#ccc;font-size:0.9em;" id="area_mainfooter_url">https://k3su.xyz/calc/factorization.php</span>
+		</div>
+	</a>
+ 
+</div>
+ 
+ 
+					</article>
+				</main>
+				
+				<aside id="sidebar" style="height: auto !important;">
+ 
+	<!--
+	<div class="sidebar_ad">
+		<div style="width:100%;height:250px;background:#dcdcdc;">
+			広告
+		</div>
+	</div>
+	-->
+ 
+	
+	<p class="mg_b_5 al_c fc_gy fs_08em" style="">スポンサーリンク</p>	
+			<div style="width: 300px !important; height: 250px !important;margin-bottom:20px;">
+ 
+ 
+			<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous" data-checked-head="true"></script>
+			<!-- サイドバー上縦長 -->
+			<ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-9242622843425228" data-ad-slot="3338816492" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_5_host" style="border: medium; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9242622843425228&amp;output=html&amp;h=250&amp;slotname=3338816492&amp;adk=3578489132&amp;adf=3177797130&amp;pi=t.ma~as.3338816492&amp;w=300&amp;abgtt=6&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1725359614&amp;rafmt=1&amp;format=300x250&amp;url=https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;dt=1725359613819&amp;bpp=1&amp;bdt=802&amp;idt=318&amp;shv=r20240828&amp;mjsv=m202408280101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Db727afe7cd762f34%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MbotgAA6X28924MoOEfaeWsDQm0Qg&amp;gpic=UID%3D00000eeae39ba8be%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MZgjXIcuGXNxBjPcC-0G3WbueCIGg&amp;eo_id_str=ID%3D4cb4e084c265284d%3AT%3D1725351814%3ART%3D1725351814%3AS%3DAA-Afjb69-e8mtY_jJF47SpeTk22&amp;prev_fmts=0x0%2C300x250%2C300x250&amp;nras=1&amp;correlator=7623124357747&amp;frm=20&amp;pv=1&amp;u_tz=540&amp;u_his=2&amp;u_h=1080&amp;u_w=810&amp;u_ah=810&amp;u_aw=1080&amp;u_cd=32&amp;u_sd=2&amp;adx=740&amp;ady=124&amp;biw=1080&amp;bih=707&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759842%2C31086546%2C31086547%2C31086551%2C31086590%2C31086639%2C31086687%2C31086688%2C44795921%2C95338226%2C95341533%2C95341662%2C31086664%2C95340845%2C95341515%2C95341519&amp;oid=2&amp;pvsid=3906096834955936&amp;tmod=946011298&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1080%2C0%2C1080%2C810%2C1080%2C707&amp;vis=1&amp;rsz=%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1&amp;ifi=6&amp;uci=a!6&amp;fsb=1&amp;dtd=320" data-google-container-id="a!6" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CO73qbfJpogDFbdFwgUdv44R8A" data-load-complete="true"></iframe></div></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+ 
+ 
+		</div>
+	
+ 
+	<p class="sidebar_title">計算</p><ul class="sidebar_list"><li><a href="../calc/add.php">足し算</a></li><li><a href="../calc/sub.php">引き算</a></li><li><a href="../calc/mul.php">掛け算</a></li><li><a href="../calc/div.php">割り算</a></li><li><a href="../calc/mix.php">混合演算</a></li><li><a href="../calc/dist.php">分配法則</a></li><li><a href="../calc/percent.php">百分率(パーセント)</a></li><li><a href="../calc/power.php">累乗・べき乗</a></li><li><a href="../calc/root.php">平方根・累乗根</a></li><li><a href="../calc/root-simple.php">ルートの中を簡単にする</a></li><li><a href="../calc/root-calc.php">ルートの計算</a></li><li><a href="../calc/char-exp.php">文字式</a></li><li><a href="../calc/linear-equation.php">方程式</a></li><li><a href="../calc/quad-equation.php">二次方程式</a></li><li><a href="../calc/sim-equation.php">連立方程式</a></li><li><a href="../calc/linear-function.php">一次関数</a></li><li><a href="../calc/square-function.php">二乗に比例する関数</a></li><li><a href="../calc/unfoid.php">式の展開</a></li><li><a href="../calc/factorization.php">因数分解</a></li><li><a href="../calc/cross.php">因数分解(たすき掛け)</a></li><li><a href="../calc/linear-inequality.php">一次不等式</a></li><li><a href="../calc/double-root.php">二重根号を外す</a></li></ul>
+	<p class="sidebar_title">よく見られているページ</p>
+	<ul class="sidebar_list">
+		<li><a href="../fraction/aboutminutes.php">約分</a></li>
+		<li><a href="../fraction/mix.php">分数の混合計算</a></li>
+		<li><a href="../calc/factorization.php">因数分解</a></li>
+		<li><a href="../calc/sim-equation.php">連立方程式</a></li>
+		<li><a href="../fraction/pass.php">通分</a></li>
+		<li><a href="../calc/linear-equation.php">方程式</a></li>
+		<li><a href="../qm/">中学数学の問題出題ツール一覧</a></li>
+	</ul>
+ 
+	<div class="sidebar_ad area_ads" style="height: auto !important;">
+		<p class="mg_b_5 fc_gy al_c fs_08em">スポンサーリンク</p>
+		
+			<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous" data-checked-head="true"></script>
+			<!-- サイドバー -->
+			<ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-9242622843425228" data-ad-slot="9672071461" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_6_host" style="border: medium; height: 250px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_6" name="aswift_6" style="left:0;position:absolute;top:0;border:0;width:300px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9242622843425228&amp;output=html&amp;h=250&amp;slotname=9672071461&amp;adk=2831297818&amp;adf=1174175986&amp;pi=t.ma~as.9672071461&amp;w=300&amp;abgtt=6&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1725359614&amp;rafmt=1&amp;format=300x250&amp;url=https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;dt=1725359613820&amp;bpp=1&amp;bdt=802&amp;idt=321&amp;shv=r20240828&amp;mjsv=m202408280101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Db727afe7cd762f34%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MbotgAA6X28924MoOEfaeWsDQm0Qg&amp;gpic=UID%3D00000eeae39ba8be%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MZgjXIcuGXNxBjPcC-0G3WbueCIGg&amp;eo_id_str=ID%3D4cb4e084c265284d%3AT%3D1725351814%3ART%3D1725351814%3AS%3DAA-Afjb69-e8mtY_jJF47SpeTk22&amp;prev_fmts=0x0%2C300x250%2C300x250%2C300x250&amp;nras=1&amp;correlator=7623124357747&amp;frm=20&amp;pv=1&amp;u_tz=540&amp;u_his=2&amp;u_h=1080&amp;u_w=810&amp;u_ah=810&amp;u_aw=1080&amp;u_cd=32&amp;u_sd=2&amp;adx=740&amp;ady=1844&amp;biw=1080&amp;bih=707&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759842%2C31086546%2C31086547%2C31086551%2C31086590%2C31086639%2C31086687%2C31086688%2C44795921%2C95338226%2C95341533%2C95341662%2C31086664%2C95340845%2C95341515%2C95341519&amp;oid=2&amp;pvsid=3906096834955936&amp;tmod=946011298&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1080%2C0%2C1080%2C810%2C1080%2C707&amp;vis=1&amp;rsz=%7C%7CeEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1&amp;ifi=7&amp;uci=a!7&amp;btvi=1&amp;fsb=1&amp;dtd=322" data-google-container-id="a!7" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CM_rqbfJpogDFf9FwgUdIfszGg" data-load-complete="true"></iframe></div></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+	
+	
+			</div>
+ 
+ 
+</aside>
+ 
+			</div>
+			<nav id="contents_footer_calc">
+				<a href="../sitemap.php"><i class="fas fa-chevron-circle-right mg_r_5"></i>ページ一覧へ</a>
+			</nav>
+			
+			<footer>
+	<div id="footer_main" class="width">
+		<p id="footer_title">
+			<img src="../_image/title_footer.png" alt="算数の電卓" style="width:44px;height:auto;">
+		</p>
+	
+		<nav id="footer_menu">
+			<ul>
+				<li><a href="../">算数の電卓TOP</a></li>
+				<li><a href="../use.php">ご利用について</a></li>
+				<li><a href="../privacy.php">プライバシーポリシー</a></li>
+				<li><a href="../contact.php">お問い合わせ</a></li>
+				<li><a href="../sitemap.php">サイトマップ</a></li>
+			</ul>
+		</nav>
+		<p id="footer_copyright">
+			Copyright ©　算数の電卓　All Rights Reserved.
+					</p>
+	</div>
+</footer>
+		</div>
+<a href="#" id="move_top" style="display: none;"><i class="fas fa-angle-up"></i></a><div id="flash_msg" style="position:fixed;z-index:1000;display:none;opacity: 0;padding:5px 10px;background:#333;color:#fff;font-size:1.2em;white-space: nowrap;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;"></div><div id="oi_temp" class="dspy_n"></div><table cellspacing="0" cellpadding="0" role="presentation" class="gstl_50 gssb_c" style="width: 223px; display: none; top: 52px; position: absolute; left: 444px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: medium; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9242622843425228&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;abgtt=6&amp;lmt=1725359614&amp;plaf=1%3A2%2C7%3A2&amp;plat=1%3A128%2C2%3A128%2C3%3A128%2C4%3A128%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fk3su.xyz%2Fcalc%2Ffactorization.php&amp;pra=5&amp;wgl=1&amp;aihb=0&amp;asro=0&amp;ailel=1~2~4~6~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aiael=1~2~4~6~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aifxl=29_18~30_19&amp;aiixl=29_5~30_6&amp;aslmct=0.7&amp;asamct=0.7&amp;dt=1725359613808&amp;bpp=2&amp;bdt=791&amp;idt=295&amp;shv=r20240828&amp;mjsv=m202408280101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Db727afe7cd762f34%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MbotgAA6X28924MoOEfaeWsDQm0Qg&amp;gpic=UID%3D00000eeae39ba8be%3AT%3D1725351814%3ART%3D1725351814%3AS%3DALNI_MZgjXIcuGXNxBjPcC-0G3WbueCIGg&amp;eo_id_str=ID%3D4cb4e084c265284d%3AT%3D1725351814%3ART%3D1725351814%3AS%3DAA-Afjb69-e8mtY_jJF47SpeTk22&amp;nras=1&amp;correlator=7623124357747&amp;frm=20&amp;pv=2&amp;u_tz=540&amp;u_his=2&amp;u_h=1080&amp;u_w=810&amp;u_ah=810&amp;u_aw=1080&amp;u_cd=32&amp;u_sd=2&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1080&amp;bih=707&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759842%2C31086546%2C31086547%2C31086551%2C31086590%2C31086639%2C31086687%2C31086688%2C44795921%2C95338226%2C95341533%2C95341662%2C31086664%2C95340845%2C95341515%2C95341519&amp;oid=2&amp;pvsid=3906096834955936&amp;tmod=946011298&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1080%2C0%2C1080%2C810%2C1080%2C707&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;bz=1&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=311" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins><iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: medium; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="__tcfapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: medium; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="about:blank" style="display: none; width: 0px; height: 0px; border: medium; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="about:blank" style="display: none; width: 0px; height: 0px; border: medium; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20240828/r20110914/zrt_lookup_fy2021.html" style="display: none;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: repeat !important;" aria-hidden="true" data-ad-status="filled" data-vignette-loaded="true" tabindex="0"><div id="aswift_7_host" style="border: medium !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_7" name="aswift_7" style="width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20240828/r20110914/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-9242622843425228&amp;fa=8&amp;ifi=8&amp;uci=a!8" data-google-container-id="a!8" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CNSaqLfJpogDFXVFwgUdwLwSBA" data-load-complete="true"></iframe></div></ins></html>
 <head>
     <link rel="stylesheet" href="./togglePassword.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <meta charset='utf-8'>
-    <title>render</title>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Protected Redirect</title>
-    <script>
-        function checkPassword(event) {
-            event.preventDefault(); // フォームの送信を防ぐ
-
-            const passwordInput = document.getElementById('password').value;
-            const correctPassword = ''; // 正しいパスワード
-
-            if (passwordInput === correctPassword) {
-                window.location.href = '/blog'; // 正しいパスワードならリダイレクト
-            } else {
-                alert('パスワードが間違っています。');
-            }
-        }
-    </script>
 </head>
 <body>
     <form onsubmit="checkPassword(event)">
@@ -33,42 +1136,18 @@
 </html>
 
     //pass
-    <script>function getlevel(){
-        if(document.getElementById('word').value == "85175"){document.cookie = "yuki=True; path=/;";}else{
-        let req = new XMLHttpRequest();
-        req.addEventListener("load", function(){document.getElementById('info').textContent  this.responseText});
-        req.open("GET", "/answer?q="+document.getElementById('word').value);
-        req.send();}
-    }
-    function pushHideButton() {
-        var txtPass = document.getElementById("word");
-        var btnEye = document.getElementById("buttonEye");
-        if (txtPass.type === "text") {
-        txtPass.type = "password";
-        btnEye.className = "fa fa-eye";
-        } else {
-        txtPass.type = "text";
-        btnEye.className = "fa fa-eye-slash";
-        }
-    }
+    <script>function backend(){
+        if (document.getElementById("gennumber"+"form").value == 85175){document.cookie = "yuki=True; max-age=31536000;path=/";location.href="/";}
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/answer?q='+document.getElementById("gennumber"+"form").value, true);
+        
+        xhr.onload = function () {
+            document.getElementById("gennumber"+"form").value = xhr.responseText;
+        };
+        
+        xhr.send();
+        event.preventDefault();}
     </script>
 </head>
-    <input id="word" type="password"></input>
-    <span id="buttonEye" class="fa fa-eye" onclick="pushHideButton()"></span>
-    <input type="button" onClick="getlevel()" value="確認"></input>
-    <div id="info">
-        <script>
-        window.onload = function() {
-            var password = prompt('パスワードを入力してください:');
-            var correctPassword = '85175'; 
-          if (passwordInput === correctPassword) {
-                window.location.href = '/blog'; // 正しいパスワードならリダイレクト
-            } 
-            if (password !== correctPassword) {
-                alert('パスワードが間違っています。');
-                window.location.href = 'https://www.yahoo.co.jp'; 
-            }
-        };
-    </script>
 </body>
 </html>
