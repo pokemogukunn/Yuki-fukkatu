@@ -238,6 +238,14 @@ def playlist(list:str,response: Response,request: Request,page:Union[int,None]=1
     response.set_cookie("yuki","True",max_age=60 * 60 * 24 * 7)
     return template("search.html", {"request": request,"results":get_playlist(list,str(page)),"word":"","next":f"/playlist?list={list}","proxy":proxy})
 
+@app.get("/requestform", response_class=HTMLResponse)
+def viewlist(response: Response,request: Request,yuki: Union[str] = Cookie(None)):
+    global apis,apichannels,apicomments
+    if not(check_cokie(yuki)):
+        return redirect("/")
+    response.set_cookie("yuki","True",max_age=60 * 60 * 24 * 7)
+    return template("requestform.html",)
+
 @app.get("/info", response_class=HTMLResponse)
 def viewlist(response: Response,request: Request,yuki: Union[str] = Cookie(None)):
     global apis,apichannels,apicomments
