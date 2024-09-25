@@ -177,8 +177,8 @@ app.mount("/blog", StaticFiles(directory="./blog/kakaomame", html=True), name="s
 app.mount("/pass", StaticFiles(directory="./pass", html=True), name="static")
 app.mount("/blogs", StaticFiles(directory="./blog/pokemogukunn", html=True), name="static")
 app.mount("/bloger", StaticFiles(directory="./blog/pokemogukunns", html=True), name="static")
+app.mount("/requestform", StaticFiles(directory="./requestform", html=True), name="static")
 app.add_middleware(GZipMiddleware, minimum_size=1000)
-
 from fastapi.templating import Jinja2Templates
 template = Jinja2Templates(directory='templates').TemplateResponse
 
