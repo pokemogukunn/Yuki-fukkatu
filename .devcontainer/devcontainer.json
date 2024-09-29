@@ -1,0 +1,13 @@
+{
+  "name": "Python Dev",
+  "image": "mcr.microsoft.com/devcontainers/python:3.9",  // Python 3.9 イメージを使用
+  "postCreateCommand": "pip install -r requirements.txt",  // Codespacesが起動した後に依存関係をインストール
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"  // Python用VS Code拡張
+      ]
+    }
+  }
+}
+
